@@ -58,3 +58,5 @@ export default {
 }
 </script>
 ```
+
+Made with ❤️ by Jofferson Ramirez Tiquez
