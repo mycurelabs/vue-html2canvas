@@ -1,6 +1,6 @@
 {
   "name": "vue-html2canvas",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Vue mixin for Html2Canvas",
   "main": "index.js",
   "scripts": {
