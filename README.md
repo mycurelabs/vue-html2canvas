@@ -34,7 +34,7 @@ Vue.use(VueHtml2Canvas);
     <!-- OUTPUT -->
     <img :src="output">
   </div>
-<teplate>
+<template>
 
 <script>
 export default {
