@@ -6,7 +6,7 @@ const VueHtml2Canvas = {
       methods: {
         async $html2canvas(el, options = {}) {
           const { type } = options;
-          const canvas = await html2canvas(el);
+          const canvas = await html2canvas(el, options);
           if(type && type === 'dataURL')
             return canvas.toDataURL();
           else {
