@@ -1,0 +1,26 @@
+image: node:8.12.0
+
+cache:
+  paths:
+    - node_modules/
+
+stages: 
+  - test
+  - deploy
+
+test: 
+  stage: test
+  only:
+    - master
+  script: 
+    - echo 'tests passed'
+
+deploy_firebase:
+  stage: deploy
+  only: 
+    - master
+  script:
+    - npm install
+    - npm run build
+    - echo '//registry.npmjs.org/:_authToken=${NPM_TOKEN}'>.npmrc
+    - npm publish

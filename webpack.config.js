@@ -39,16 +39,16 @@ module.exports = {
         screw_ie8: true
       },
       output: {
-        comments: false,
+        comments: false
       },
       exclude: [/\.min\.js$/gi] // skip pre-minified libs
     }),
     new CompressionPlugin({
-      asset: "[path].gz[query]",
-      algorithm: "gzip",
+      asset: '[path].gz[query]',
+      algorithm: 'gzip',
       test: /\.js$|\.css$|\.html$/,
       threshold: 10240,
       minRatio: 0
     })
   ]
-}
+};
