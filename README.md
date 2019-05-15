@@ -27,7 +27,7 @@ Vue.use(VueHtml2Canvas);
 ```html
 <template>
   <div>
-    <!-- SOURCE -->    
+    <!-- SOURCE -->
     <div ref="printMe" style="padding: 10px; background: #f5da55">
       <h1 style="color: #000; ">Print me!</h1>
     </div>
