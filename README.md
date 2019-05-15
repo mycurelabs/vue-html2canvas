@@ -27,9 +27,9 @@ Vue.use(VueHtml2Canvas);
 ```html
 <template>
   <div>
-    <!-- SOURCE -->
-    <div ref="printMe">
-      <h1>Print me!</h1>
+    <!-- SOURCE -->    
+    <div ref="printMe" style="padding: 10px; background: #f5da55">
+      <h1 style="color: #000; ">Print me!</h1>
     </div>
     <!-- OUTPUT -->
     <img :src="output">
@@ -44,7 +44,7 @@ export default {
     }
   },
   methods: {
-    print() {
+    async print() {
       const el = this.$refs.printMe;
       // add option type to get the image version
       // if not provided the promise will return 
@@ -54,6 +54,9 @@ export default {
       }
       this.output = await this.$html2canvas(el, options);
     }
+  },
+  mounted() {
+    this.print()
   }
 }
 </script>
