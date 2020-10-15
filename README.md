@@ -1,5 +1,5 @@
 # vue-html2canvas
-Vue mixin for Html2Canvas
+Vue mixin for Html2Canvas to remove the white spaces.
 
 ### Install
 
