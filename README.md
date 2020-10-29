@@ -1,4 +1,4 @@
-# vue-html2canvas
+# Vue Html2Canvas
 Vue mixin for Html2Canvas
 
 ### Install
